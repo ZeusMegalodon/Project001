@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red2">
+
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_red"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/dimen_20dp"
+        android:paddingVertical="@dimen/dimen_20dp">
+
+        <ImageView
+            android:id="@+id/finish"
+            android:layout_width="24dp"
+            android:layout_height="32dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/left" />
+
+        <TextView
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:text="@string/pilihan_bahasa"
+            android:textColor="@color/kuning"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bottom2"
+        app:tint="@color/kuning" />
+
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar"
+        android:layout_marginHorizontal="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/indonesia"
+            android:fontFamily="@font/poppins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@drawable/button_round_1"
+            android:backgroundTint="@color/kuning3"
+            android:button="@null"
+            android:drawableStart="@drawable/indonesia"
+            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:layoutDirection="rtl"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/indonesia"
+            android:textAlignment="textStart"
+            android:textColor="@color/red2"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:fontFamily="@font/poppins"
+            android:id="@+id/english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@drawable/button_round_1"
+            android:backgroundTint="@color/kuning3"
+            android:button="@null"
+            android:drawableStart="@drawable/usa"
+            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:layoutDirection="rtl"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/english"
+            android:textAlignment="textStart"
+            android:textColor="@color/red2"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/china"
+            android:fontFamily="@font/poppins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@drawable/button_round_1"
+            android:backgroundTint="@color/kuning3"
+            android:button="@null"
+            android:drawableStart="@drawable/china"
+            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:layoutDirection="rtl"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/chinese"
+            android:textAlignment="textStart"
+            android:textColor="@color/red2"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/arabic"
+            android:fontFamily="@font/poppins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@drawable/button_round_1"
+            android:backgroundTint="@color/kuning3"
+            android:button="@null"
+            android:drawableStart="@drawable/palestine"
+            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:layoutDirection="rtl"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/arabic"
+            android:textAlignment="textStart"
+            android:textColor="@color/red2"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

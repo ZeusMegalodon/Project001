@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".addresspick.MapsPickerActivity">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_red"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/dimen_20dp"
+        android:paddingVertical="@dimen/dimen_20dp">
+
+        <ImageView
+            android:id="@+id/finish"
+            android:layout_width="24dp"
+            android:layout_height="32dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:fontFamily="@font/poppins_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:text="@string/pilih_lokasi"
+                android:textColor="@color/kuning"
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:fontFamily="@font/poppins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:text="@string/tahan_dan_seret_marker_untuk_mendapatkan_alamat"
+                android:textColor="@color/kuning" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/konfirm"
+        android:layout_marginHorizontal="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        app:cardBackgroundColor="@color/kuning3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_15dp">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimen_8dp"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/red2"
+                android:textSize="12sp"
+                app:drawableStartCompat="@drawable/pick_start" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_2dp"
+                android:layout_marginVertical="@dimen/dimen_8dp"
+                android:background="@color/red2" />
+
+            <TextView
+                android:fontFamily="@font/poppins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_alamat" />
+
+            <EditText
+                android:id="@+id/extras"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:background="@drawable/bg_white_border_red"
+                android:gravity="top|start"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/tulis_detail_alamat_kamu"
+                android:padding="@dimen/dimen_8dp"
+                android:textColor="@color/red2"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/konfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:backgroundTint="@color/red2"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/konfirmasi_lokasi"
+        android:textAllCaps="false"
+        android:textColor="@color/kuning" />
+
+</RelativeLayout>

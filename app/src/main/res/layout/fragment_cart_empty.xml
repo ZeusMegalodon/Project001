@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kuning3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:contentDescription="@string/app_name"
+            android:fontFamily="@font/poppins"
+            android:src="@drawable/cart_empty" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/poppins"
+            android:text="@string/belum_ada_pesanan_nih_ndi_keranjang_kamu"
+            android:textColor="@color/red2"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

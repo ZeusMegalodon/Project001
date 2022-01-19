@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginVertical="@dimen/dimen_5dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_red"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iconAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/school_2" />
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/iconAddress"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:gravity="center_vertical"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/arrow"
+                android:gravity="center_vertical"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_12sp" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/circl"
+                android:backgroundTint="@color/kuning"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_down_" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/black2"
+        android:paddingHorizontal="@dimen/dimen_20dp"
+        android:paddingVertical="@dimen/dimen_10dp">
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_8dp"
+            android:gravity="center_vertical"
+            android:text="@string/edit"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            app:drawableStartCompat="@drawable/ic_edit_"
+            app:drawableTint="@color/red2" />
+
+        <TextView
+            android:id="@+id/hapus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:drawablePadding="@dimen/dimen_8dp"
+            android:gravity="center_vertical"
+            android:text="@string/hapus"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/white"
+            app:drawableStartCompat="@drawable/ic_trash"
+            app:drawableTint="@color/red2" />
+
+    </LinearLayout>
+
+</LinearLayout>

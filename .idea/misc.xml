@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Studio Project/NewMrJempoot-master/app/src/main/res/layout/activity_ambil_ktp.xml" value="0.135258358662614" />
+        <entry key="..\:/Android Studio Project/NewMrJempoot-master/app/src/main/res/layout/activity_detail_gopek.xml" value="0.25" />
+        <entry key="..\:/Android Studio Project/NewMrJempoot-master/app/src/main/res/layout/activity_gopek.xml" value="0.21" />
+        <entry key="..\:/Android Studio Project/NewMrJempoot-master/app/src/main/res/layout/activity_login.xml" value="0.135258358662614" />
+        <entry key="..\:/Android Studio Project/NewMrJempoot-master/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android Studio Project/NewMrJempoot-master/app/src/main/res/layout/activity_splash.xml" value="0.135258358662614" />
+        <entry key="..\:/Android Studio Project/NewMrJempoot-master/app/src/main/res/layout/item_adapter_fitur.xml" value="0.135258358662614" />
+        <entry key="..\:/Android Studio Project/NewMrJempoot-master/app/src/main/res/layout/item_adapter_gopek_extra.xml" value="0.135258358662614" />
+        <entry key="..\:/StudioProject/NewMrJempoot/app/src/main/res/layout/activity_saved_address.xml" value="0.1921875" />
+        <entry key="..\:/StudioProject/NewMrJempoot/app/src/main/res/layout/activity_speed_detection.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable-v24/ic_right.xml" value="0.20833333333333334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/account_outline.xml" value="0.14166666666666666" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/back_select.xml" value="0.20833333333333334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/back_tabs.xml" value="0.20833333333333334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/bg_dots.xml" value="0.20833333333333334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/bg_white_border_red.xml" value="0.20833333333333334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/btn_rect.xml" value="0.20833333333333334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/card_state_list.xml" value="0.20833333333333334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/circl.xml" value="0.20833333333333334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/email_outline.xml" value="0.14166666666666666" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.20833333333333334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/ic_cancel_xml.xml" value="0.20833333333333334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/ic_down_.xml" value="0.20833333333333334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/ic_menu.xml" value="0.20833333333333334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/lock_outline.xml" value="0.14166666666666666" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/radius_top.xml" value="0.20833333333333334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/drawable/top_red.xml" value="0.20833333333333334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout-v23/fragment_home.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activit_maps_picker.xml" value="0.5" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_address.xml" value="0.33" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_auto_complete_place.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_change_language.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_data_pribadi.xml" value="0.33" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_goceng.xml" value="0.2" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_help_center.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_landing.xml" value="0.33" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_landing_goceng.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_notifikasi.xml" value="0.33" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_on_board.xml" value="0.178125" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_splash.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_success.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/activity_wallet_landing.xml" value="0.178125" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/fragment_change_email_bottom_sheet.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/fragment_change_handphone_bottom_sheet.xml" value="0.178125" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/fragment_change_language.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/fragment_enable_location.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/fragment_home.xml" value="0.19228764981761334" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/fragment_jenis_kelamin_bottom_sheet.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/fragment_on_boarding_1.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/fragment_on_boarding_2.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/fragment_on_boarding_3.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/fragment_slider.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/fragment_splash.xml" value="0.178125" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/fragment_wish_list.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/ic_cancel_xml.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/ic_love_outline.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/ic_star.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/item_adapter_fitur.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/item_adapter_meal.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/item_adapter_wish_list.xml" value="0.22" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/main_include.xml" value="0.25" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/new_verifycode.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/shimercategory.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/shimerpromo.xml" value="0.1921875" />
+        <entry key="..\:/Tugas_Galau/Android_Studio_Projects/NewMrJempoot/app/src/main/res/layout/sidebar.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/bg_red_.xml" value="0.19114583333333332" />
+        <entry key="app/src/main/res/drawable/bg_wallet.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/drawable/bottom_red.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/drawable/button_round_2.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/drawable/heart.xml" value="0.19114583333333332" />
+        <entry key="app/src/main/res/drawable/ic_edit_.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/drawable/ic_qr.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/activit_maps_picker.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/activity_address.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/activity_ambil_ktp.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_change_language.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_daftar_membership.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_data_pribadi.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_detail_gopek.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_goban.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_goban_vip.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_goceng.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_gopek.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_help_center.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_landing.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/activity_landing_goban.xml" value="0.1578125" />
+        <entry key="app/src/main/res/layout/activity_landing_goceng.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/activity_landing_member.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/activity_notifikasi.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_on_board.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/activity_privacy.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.391705069124424" />
+        <entry key="app/src/main/res/layout/activity_ringkasan_extra_vip.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_saved_address.xml" value="0.15729166666666666" />
+        <entry key="app/src/main/res/layout/activity_search_result.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/activity_success.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/activity_top_up.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_wallet_landing.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/bottom_sheet_ktp.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/fragment_cart.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_cart_empty.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/fragment_change_email_bottom_sheet.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/fragment_change_handphone_bottom_sheet.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/fragment_change_language.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/fragment_enable_location.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/fragment_faq.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_finished.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/fragment_jenis_kelamin_bottom_sheet.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/fragment_landing_help_center.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/fragment_metode_bayar_sheet_vip.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/fragment_on_boarding_1.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_on_boarding_2.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_on_boarding_3.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/fragment_pengantaran.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/fragment_slider.xml" value="0.14907407407407408" />
+        <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_wish_list.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/item_adapter_faq.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/item_adapter_fitur.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/item_adapter_gopek.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/item_adapter_gopek_extra.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/item_adapter_gopek_normal.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/item_adapter_history.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/item_adapter_history_wallet.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/item_adapter_meal.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/item_adapter_saved_address.xml" value="0.17447916666666666" />
+        <entry key="app/src/main/res/layout/item_adapter_wish_list.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/list_group_faq.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/main_include.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/search_driver.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/sidebar.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/wish_list_activity.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/menu/gopek_menu.xml" value="0.175" />
+        <entry key="app/src/main/res/menu/navigation.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kuning3"
+    tools:context=".gokidz.SpeedDetectionActivity">
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_red"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/dimen_20dp"
+        android:paddingVertical="@dimen/dimen_20dp">
+
+        <ImageView
+            android:id="@+id/finish"
+            android:layout_width="24dp"
+            android:layout_height="32dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/left" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Speed Detection"
+            android:textColor="@color/kuning"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="-10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bottom2" />
+
+    <me.ibrahimsn.lib.Speedometer
+        android:layout_margin="@dimen/dimen_20dp"
+        android:id="@+id/speedometer"
+        android:layout_below="@id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:maxSpeed="150"
+        app:borderSize="8dp"
+        app:metricText="km/h"
+        app:borderColor="@color/red2"
+        app:textColor="@color/red2"/>
+
+</RelativeLayout>

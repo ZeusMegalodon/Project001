@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "1068390905390",
+    "firebase_url": "https://mr-jempoot-default-rtdb.firebaseio.com",
+    "project_id": "mr-jempoot",
+    "storage_bucket": "mr-jempoot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068390905390:android:db22be05dce42e20e4d1bf",
+        "android_client_info": {
+          "package_name": "com.surelabsid.mrjempoot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068390905390-a1c7n5n5ao00g9uj5vg071dbfcsu85e9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.surelabsid.mrjempoot",
+            "certificate_hash": "d5a8faad680b3e5bac56af9c7f414726e042f1cf"
+          }
+        },
+        {
+          "client_id": "1068390905390-qa49kisj9dqqvimrk9kc44obdqk8s2v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwpWES5yx48hMmcPuCuB5apj_ZjqfAHLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068390905390-qa49kisj9dqqvimrk9kc44obdqk8s2v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068390905390:android:3e1acc1111994ffce4d1bf",
+        "android_client_info": {
+          "package_name": "com.surelabsid.mrjempootdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068390905390-iet2dmgk1dnppvlmf1n7j0iaa4um6b81.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.surelabsid.mrjempootdriver",
+            "certificate_hash": "d5a8faad680b3e5bac56af9c7f414726e042f1cf"
+          }
+        },
+        {
+          "client_id": "1068390905390-qa49kisj9dqqvimrk9kc44obdqk8s2v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwpWES5yx48hMmcPuCuB5apj_ZjqfAHLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068390905390-qa49kisj9dqqvimrk9kc44obdqk8s2v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068390905390:android:b936809466ac3b59e4d1bf",
+        "android_client_info": {
+          "package_name": "com.surelabsid.mrjempootmerchant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068390905390-lp7sragk0k96fiealajo3a1mtijrr653.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.surelabsid.mrjempootmerchant",
+            "certificate_hash": "9d5dd1f7573b00a94cbe1f914e108fed0418dfc4"
+          }
+        },
+        {
+          "client_id": "1068390905390-pcerqna0hljmvbnmhl9s37rpdk9nnjon.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.surelabsid.mrjempootmerchant",
+            "certificate_hash": "ac913b89e9ca2474246deca362dc5af1a91c8dbf"
+          }
+        },
+        {
+          "client_id": "1068390905390-qa49kisj9dqqvimrk9kc44obdqk8s2v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwpWES5yx48hMmcPuCuB5apj_ZjqfAHLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068390905390-qa49kisj9dqqvimrk9kc44obdqk8s2v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068390905390:android:7ee96266255518dbe4d1bf",
+        "android_client_info": {
+          "package_name": "com.surelabsid.newmrjempoot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068390905390-qa49kisj9dqqvimrk9kc44obdqk8s2v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwpWES5yx48hMmcPuCuB5apj_ZjqfAHLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068390905390-qa49kisj9dqqvimrk9kc44obdqk8s2v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

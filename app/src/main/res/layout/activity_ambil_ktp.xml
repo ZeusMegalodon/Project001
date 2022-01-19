@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_80dp"
+        android:background="@color/black2"
+        tools:context=".activity.member.AmbilKTPActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bottom2" />
+
+        <RelativeLayout
+            android:id="@+id/imageheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_red"
+            android:elevation="8dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dimen_20dp">
+
+
+            <ImageView
+                android:id="@+id/finish"
+                android:layout_width="24dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/left" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:layout_toStartOf="@id/photo"
+                android:layout_toEndOf="@id/finish"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:fontFamily="@font/poppins_bold"
+                    android:id="@+id/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ambil_foto_ktp"
+                    android:textColor="@color/kuning"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:id="@+id/photo"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/user" />
+
+
+        </RelativeLayout>
+
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/viewFinder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ktp_placeholder" />
+
+        <ImageView
+            android:id="@+id/take"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:background="@drawable/button_round_2"
+            android:paddingHorizontal="@dimen/dimen_15dp"
+            android:paddingVertical="@dimen/dimen_8dp"
+            android:src="@drawable/camera2__" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_sheet_ktp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

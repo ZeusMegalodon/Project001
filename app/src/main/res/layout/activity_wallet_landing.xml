@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bg_wallet" />
+
+    <ImageView
+        android:id="@+id/imgWallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/containerHistory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/img_wallet" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imgWallet"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/imgWallet"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dimen_8dp">
+
+        <TextView
+            android:id="@+id/namaLengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/poppins"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/kuning" />
+
+        <TextView
+            android:id="@+id/nomorTelepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/poppins"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/kuning"
+            android:textSize="@dimen/dimen_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imgWallet"
+        android:layout_alignParentEnd="true"
+        android:layout_toStartOf="@id/imgWallet"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/dimen_8dp">
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/kuning" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/poppins"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/kuning"
+            android:textSize="@dimen/dimen_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/bottom_red"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_25dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/kuning3"
+            app:cardCornerRadius="@dimen/dimen_8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dimen_8dp">
+
+                <ImageView
+                    android:id="@+id/iconWallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/wallet" />
+
+                <LinearLayout
+                    android:id="@+id/totalSaldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_toStartOf="@id/topup"
+                    android:layout_toEndOf="@id/iconWallet"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saldo"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/red2"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                    <me.abhinay.input.CurrencyEditText
+                        android:id="@+id/jumlahSaldo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/poppins"
+                        android:enabled="false"
+                        android:textColor="@color/red2"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/topup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:layout_toStartOf="@id/qrCode"
+                    android:elevation="@dimen/dimen_0dp"
+                    app:cardBackgroundColor="@color/red2"
+                    app:cardElevation="@dimen/dimen_0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:paddingHorizontal="@dimen/dimen_10dp"
+                        android:text="+"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/qrCode"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_qr" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp">
+
+                    <TextView
+                        android:id="@+id/hariIniTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Transaksi yang lalu"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/dateToday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins"
+                        android:layout_toEndOf="@id/hariIniTv"
+                        android:gravity="end"
+                        android:text="Today"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:elevation="@dimen/dimen_0dp"
+                    app:cardCornerRadius="@dimen/dimen_8dp"
+                    app:cardElevation="@dimen/dimen_0dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/transToday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/item_adapter_history_wallet" />
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Transaksi yang lalu"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:elevation="@dimen/dimen_0dp"
+                    app:cardCornerRadius="@dimen/dimen_8dp"
+                    app:cardElevation="@dimen/dimen_0dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/oldTrans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/item_adapter_history_wallet" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:checked="true"
+        android:icon="@drawable/dog_house"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/order"
+        android:checked="true"
+        android:icon="@drawable/file"
+        android:title="@string/history" />
+
+    <item
+        android:id="@+id/wishlist"
+        android:icon="@drawable/ic_heart"
+        android:title="@string/wishlist" />
+
+</menu>

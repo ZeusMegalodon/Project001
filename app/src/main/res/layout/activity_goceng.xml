@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/flipper"
+    tools:context=".goceng.GocengActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".goceng.GocengActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".goceng.GocengActivity">
+
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <LinearLayout
+                android:id="@+id/bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_red"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/dimen_20dp"
+                android:paddingVertical="@dimen/dimen_20dp">
+
+                <ImageView
+                    android:id="@+id/finish"
+                    android:layout_width="24dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/left" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:text="Pesan Driver"
+                    android:textColor="@color/kuning"
+                    android:textSize="@dimen/dimen_18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/jemput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bar"
+                android:layout_marginHorizontal="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:elevation="@dimen/dimen_0dp"
+                app:cardBackgroundColor="#FCFFA7"
+                app:cardCornerRadius="@dimen/dimen_30dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/dimen_20dp"
+                    android:paddingVertical="@dimen/dimen_5dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/pick_start"
+                        app:tint="@color/red2" />
+
+                    <View
+                        android:layout_width="@dimen/dimen_1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="@dimen/dimen_10dp"
+                        android:background="#919191" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:fontFamily="@font/poppins"
+                            android:layout_height="wrap_content"
+                            android:text="@string/jemput" />
+
+                        <TextView
+                            android:id="@+id/pickup"
+                            android:layout_width="match_parent"
+                            android:fontFamily="@font/poppins"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="@string/pilih_alamat"
+                            android:textColor="@color/red2" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/editPickup"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_10dp"
+                        android:text="@string/edit"
+                        android:textColor="#919191" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jemput"
+                android:layout_marginHorizontal="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:elevation="@dimen/dimen_0dp"
+                app:cardBackgroundColor="#FCFFA7"
+                app:cardCornerRadius="@dimen/dimen_30dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/dimen_20dp"
+                    android:paddingVertical="@dimen/dimen_5dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        app:tint="@color/red2"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/finish" />
+
+                    <View
+                        android:layout_width="@dimen/dimen_1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="@dimen/dimen_10dp"
+                        android:background="#919191" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="@string/tujuan" />
+
+                        <TextView
+                            android:id="@+id/destination"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="@string/pilih_alamat"
+                            android:textColor="@color/red2" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/editDestination"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_10dp"
+                        android:text="@string/edit"
+                        android:textColor="#919191" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:behavior_hideable="false"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+            tools:ignore="MissingPrefix">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tarif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_red"
+                    android:padding="@dimen/dimen_8dp">
+
+                    <View
+                        android:id="@+id/drop"
+                        android:layout_width="80dp"
+                        android:layout_height="1dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="10dp"
+                        android:background="@color/white" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/drop"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dimen_20dp"
+                                android:gravity="center"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="Tarif Driver"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/dimen_15dp"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:id="@+id/icon"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:layout_alignParentStart="true"
+                                    android:contentDescription="@string/app_name" />
+
+                                <TextView
+                                    android:id="@+id/fitur"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginEnd="15dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:textColor="@color/kuning"
+                                    android:textSize="18sp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="15dp">
+
+                                <LinearLayout
+                                    android:id="@+id/containerIcon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/dimen_10dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:contentDescription="@string/app_name"
+                                        android:src="@drawable/gps_kuning" />
+
+                                    <ImageView
+                                        android:id="@+id/vertical2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:contentDescription="@string/app_name"
+                                        android:src="@drawable/dash_line_white" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:contentDescription="@string/app_name"
+                                        android:src="@drawable/gps_kuning" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toEndOf="@id/containerIcon"
+                                    android:orientation="vertical"
+                                    android:visibility="visible">
+
+
+                                    <TextView
+                                        android:id="@+id/pickUpTextTarif"
+                                        android:layout_width="match_parent"
+                                        android:fontFamily="@font/poppins"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:ellipsize="marquee"
+                                        android:gravity="center_vertical"
+                                        android:hint="Location"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:singleLine="true"
+                                        android:textColor="@color/white"
+                                        android:textSize="15dp" />
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/lldestination"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_toEndOf="@id/containerIcon"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/destinationTextTarif"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins"
+                                        android:background="@android:color/transparent"
+                                        android:ellipsize="marquee"
+                                        android:gravity="center_vertical"
+                                        android:hint="Destinaion"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:singleLine="true"
+                                        android:textColor="@color/white"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@color/kuning" />
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/dash_horiz" />
+
+                            <RadioGroup
+                                android:id="@+id/trip"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="15dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <RadioButton
+                                    android:id="@+id/pulangPergi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/dimen_8dp"
+                                    android:background="@null"
+                                    android:fontFamily="@font/poppins"
+                                    android:backgroundTint="@color/kuning"
+                                    android:buttonTint="@color/kuning"
+                                    android:drawableTint="@color/kuning"
+                                    android:text="Pulang Pergi"
+                                    android:textSize="11sp" />
+
+                                <RadioButton
+                                    android:id="@+id/sekaliJalan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/dimen_8dp"
+                                    android:background="@null"
+                                    android:fontFamily="@font/poppins"
+                                    android:buttonTint="@color/kuning"
+                                    android:checked="true"
+                                    android:drawableTint="@color/kuning"
+                                    android:text="Sekali Jalan"
+                                    android:textSize="11sp" />
+
+                            </RadioGroup>
+
+
+                            <LinearLayout
+                                android:id="@+id/detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <LinearLayout
+                                    android:id="@+id/merchantdetail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="15dp"
+                                        android:text="Order Detail"
+                                        android:textSize="18sp" />
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/merchantnear"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="@color/white"
+                                        android:visibility="visible" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@android:color/darker_gray" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/senddetail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="15dp"
+                                        android:text="Send Detail"
+                                        android:textSize="18sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginRight="15dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="left"
+                                            android:text="product"
+                                            android:textSize="15dp" />
+
+                                        <TextView
+                                            android:id="@+id/produk"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="right"
+                                            android:textSize="15dp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="15dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/sendername"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="left"
+                                            android:text="Nama Pengirim"
+                                            android:textSize="15dp" />
+
+                                        <Button
+                                            android:id="@+id/senderphone"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:background="@drawable/button_round_2"
+                                            android:backgroundTint="@android:color/darker_gray"
+                                            android:text="Call"
+                                            android:textColor="@color/white"
+                                            android:tint="@color/white" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="15dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/receivername"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="left"
+                                            android:text="Nama Penerima"
+                                            android:textSize="15dp" />
+
+                                        <Button
+                                            android:id="@+id/receiverphone"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:background="@drawable/button_round_2"
+                                            android:backgroundTint="@android:color/darker_gray"
+                                            android:text="Call"
+                                            android:textColor="@color/white"
+                                            android:tint="@color/white" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@android:color/darker_gray" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="15dp"
+                                    android:text="Payment Detail"
+                                    android:textSize="18dp"
+                                    android:visibility="gone" />
+
+                                <LinearLayout
+                                    android:id="@+id/llestimated"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/time"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen_8dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="left"
+                                        android:text="Waktu Dropoff :"
+                                        android:textColor="@color/kuning" />
+
+                                    <TextView
+                                        android:id="@+id/waktuDropOff"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen_8dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="right"
+                                        android:textColor="@color/kuning" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lldistance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="@dimen/dimen_8dp"
+                                    android:layout_marginRight="15dp"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Jarak"
+                                        android:fontFamily="@font/poppins"
+                                        android:textColor="@color/kuning" />
+
+                                    <TextView
+                                        android:id="@+id/distance"
+                                        android:layout_width="0dp"
+                                        android:fontFamily="@font/poppins"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:textColor="@color/kuning" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/cost_text"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen_8dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="left"
+                                        android:text="Tarif Drive: "
+                                        android:textColor="@color/kuning" />
+
+                                    <me.abhinay.input.CurrencyEditText
+                                        android:id="@+id/cost"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen_8dp"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:enabled="false"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="right"
+                                        android:textColor="@color/kuning"
+                                        android:textSize="@dimen/dimen_15dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="@dimen/dimen_4dp"
+                                    android:layout_marginRight="15dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:id="@+id/MetodeBayar"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="6"
+                                        android:gravity="left"
+                                        android:fontFamily="@font/poppins"
+                                        android:text="Metode Pembayaran: "
+                                        android:textColor="@color/kuning" />
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="4"
+                                        android:elevation="@dimen/dimen_0dp"
+                                        app:cardBackgroundColor="@color/white"
+                                        app:cardCornerRadius="15dp"
+                                        app:cardElevation="@dimen/dimen_0dp">
+
+                                        <Spinner
+                                            android:id="@+id/metodeSpinner"
+                                            style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:entries="@array/metode"
+                                            android:padding="4dp"
+                                            android:fontFamily="@font/poppins"
+                                            android:textColor="@color/kuning" />
+                                    </androidx.cardview.widget.CardView>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:fontFamily="@font/poppins"
+                                        android:text="Discount"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:id="@+id/diskon"
+                                        android:layout_width="0dp"
+                                        android:fontFamily="@font/poppins"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:textSize="15dp" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/totaltext"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="left"
+                                        android:text="Total"
+                                        android:textSize="18dp" />
+
+                                    <TextView
+                                        android:id="@+id/price"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:fontFamily="@font/poppins"
+                                        android:textSize="18dp" />
+
+                                </LinearLayout>
+
+                                <Button
+                                    android:id="@+id/order"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="Pesan Driver"
+                                    android:textAllCaps="false"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:textColor="@color/kuning"
+                                    android:textSize="18sp"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <include
+        layout="@layout/search_driver"
+        android:id="@+id/searchDriver" />
+</ViewFlipper>

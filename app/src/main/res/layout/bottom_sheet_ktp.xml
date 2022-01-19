@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_red"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_20dp"
+    app:behavior_peekHeight="90dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <View
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="@dimen/dimen_8dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        android:paddingHorizontal="@dimen/dimen_10dp"
+        android:paddingVertical="@dimen/dimen_20dp"
+        android:text="@string/yuk_simak_dulu_cara_mengambil_foto_ktp_yang_baik_dan_benar"
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="146dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="@dimen/dimen_8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_dots"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ktp_ex" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:padding="@dimen/dimen_5dp"
+        android:text="@string/posisikan_ktp_didalam_garis_panduan"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="146dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="@dimen/dimen_8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:background="@drawable/bg_dots"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ktp_ex" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        android:padding="@dimen/dimen_5dp"
+        android:text="@string/foto_tidak_boleh_buram"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="146dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="@dimen/dimen_8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_dots"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ktp_ex" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:gravity="center"
+        android:padding="@dimen/dimen_5dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/foto_tidak_boleh_terlalu_gelap_atau_terang"
+        android:textColor="@color/white" />
+</LinearLayout>

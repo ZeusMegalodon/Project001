@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D80147">
+
+    <ImageView
+        android:id="@+id/rideonboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="-20dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/rideonboard" />
+
+    <ImageView
+        android:id="@+id/cloud"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@id/rideonboard"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cloud2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cloud"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Kirim Paket atau Barang?\nBisa Banget!!!"
+            android:textAllCaps="true"
+            android:textColor="@color/kuning"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Atur Waktu Pengiriman Cepat Sampai Aman dan Hemat Onkos Kirim"
+            android:textColor="@color/kuning" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:gravity="center"
+        android:layout_marginBottom="45dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lanjutTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/poppins"
+            android:text="Lanjut"
+            android:textColor="@color/red2"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/board1Lanjut"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/app_name"
+            android:rotationY="180"
+            android:src="@drawable/left" />
+    </LinearLayout>
+</RelativeLayout>

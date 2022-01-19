@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red2">
+
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_red"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/dimen_20dp"
+        android:paddingVertical="@dimen/dimen_20dp">
+
+        <ImageView
+            android:id="@+id/finish"
+            android:layout_width="24dp"
+            android:layout_height="32dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/left" />
+
+        <TextView
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:text="Pusat Bantuan"
+            android:textColor="@color/kuning"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bottom2"
+        app:tint="@color/kuning" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar"
+        android:layout_marginHorizontal="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/button_round_1"
+        android:backgroundTint="@color/kuning3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_10dp"
+            android:text="FAQ's"
+            android:textColor="@color/red2"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/ic_arrow_right_"
+            app:drawableStartCompat="@drawable/faq_ic"
+            app:drawableTint="@color/red2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/dimen_4dp"
+            android:background="@color/red2"
+            android:backgroundTint="@color/red2" />
+
+        <TextView
+            android:id="@+id/chatCs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_10dp"
+            android:text="Chat CS"
+            android:textColor="@color/red2"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/ic_arrow_right_"
+            app:drawableStartCompat="@drawable/chat_cs"
+            app:drawableTint="@color/red2" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/kuning3"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_10dp">
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="@dimen/dimen_10dp"
+        android:background="@android:color/darker_gray" />
+
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@drawable/button_round_1"
+            android:backgroundTint="@color/kuning3"
+            android:button="@null"
+            android:fontFamily="@font/poppins"
+            android:drawableStart="@drawable/cash"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/cash"
+            android:textAlignment="textStart"
+            android:textColor="@color/red2"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <RadioButton
+            android:id="@+id/jempootPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@drawable/button_round_1"
+            android:backgroundTint="@color/kuning3"
+            android:button="@null"
+            android:fontFamily="@font/poppins"
+            android:drawableStart="@drawable/jempoot_pay_method"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/jempoot_pay"
+            android:textAlignment="textStart"
+            android:textColor="@color/red2"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginVertical="@dimen/dimen_8dp"
+        android:backgroundTint="@color/red2"
+        android:text="@string/terapkan"
+        android:textAllCaps="false" />
+
+</LinearLayout>

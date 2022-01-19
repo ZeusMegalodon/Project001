@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-15dp"
+        android:elevation="@dimen/dimen_0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/kuning"
+        app:cardCornerRadius="@dimen/dimen_10dp"
+        app:cardElevation="@dimen/dimen_0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_30dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/dimen_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/ditemukan"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="@dimen/dimen_18sp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black2" />
+
+            <TextView
+                android:id="@+id/foundedItem"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/black2"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_5dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/black2"
+            app:cardCornerRadius="@dimen/dimen_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    app:cardCornerRadius="@dimen/dimen_10dp">
+
+                    <ImageView
+                        android:id="@+id/imageMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerCrop" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/app_name"
+                    android:id="@+id/namaMenu"
+                    android:textColor="@color/kuning" />
+
+                <TextView
+                    android:paddingVertical="@dimen/dimen_8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:maxLines="2"
+                    android:fontFamily="@font/poppins"
+                    android:ellipsize="end"
+                    android:id="@+id/extra"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/dimen_8dp"
+            app:cardBackgroundColor="@color/kuning3"
+            app:cardCornerRadius="@dimen/dimen_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="@dimen/dimen_10dp"
+                android:paddingVertical="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red2"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/harga"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/dimen_8dp"
+            app:cardBackgroundColor="@color/red2"
+            app:cardCornerRadius="@dimen/dimen_16dp">
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:id="@+id/favIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:padding="@dimen/dimen_8dp"
+                android:src="@drawable/ic_love_outline"
+                app:tint="@color/kuning" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="120dp"
+            app:cardBackgroundColor="@color/kuning3"
+            app:cardCornerRadius="@dimen/dimen_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/dimen_10dp"
+                android:paddingVertical="2dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rating"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/red2"
+                    android:textSize="11sp" />
+
+                <ImageView
+                    android:contentDescription="@string/app_name"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="@dimen/dimen_4dp"
+                    android:src="@drawable/ic_star" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black2">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/bottom"
+        app:tint="@color/kuning" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:contentDescription="@string/app_name"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_35dp"
+        android:scaleX="1.5"
+        android:src="@drawable/bg_red5" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_above="@id/orangCongrats"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selamat"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/kuning"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bersenang_senang"
+            android:textColor="@color/kuning"
+            android:fontFamily="@font/poppins"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/orangCongrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/congrats_people" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-15dp"
+        android:layout_marginBottom="-10dp"
+        android:src="@drawable/plants2" />
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-15dp"
+        android:layout_marginBottom="-10dp"
+        android:src="@drawable/plants1" />
+</RelativeLayout>

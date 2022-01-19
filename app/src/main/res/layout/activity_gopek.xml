@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kuning3">
+
+
+    <RelativeLayout
+        android:id="@+id/searchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:layout_marginHorizontal="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="@dimen/dimen_15dp"
+            android:layout_toStartOf="@id/filter"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/dimen_8dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="@dimen/dimen_8dp"
+                android:drawableTint="@color/red2"
+                android:hint="Cari Makanan &amp; Restoran Favoritmu"
+                android:padding="@dimen/dimen_8dp"
+                android:id="@+id/search"
+                android:imeOptions="actionGo"
+                android:singleLine="true"
+                android:textColor="@color/black2"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="12sp" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="32dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/filter_e" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_red"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dimen_20dp">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_toStartOf="@id/photo"
+            android:layout_toEndOf="@id/menu"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/kuning"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/user" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/actionTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:elevation="@dimen/dimen_0dp"
+        app:cardBackgroundColor="@color/red2"
+        app:cardCornerRadius="@dimen/dimen_8dp"
+        app:cardElevation="@dimen/dimen_0dp">
+
+        <com.marozzi.segmentedtab.SegmentedGroup
+            android:id="@+id/group_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:sg_corner_radius="@dimen/dimen_8dp"
+            app:sg_text_color="@color/white"
+            app:sg_text_color_selected="@color/kuning">
+
+            <com.marozzi.segmentedtab.SegmentedTab
+                android:id="@+id/makanan"
+                android:layout_width="0dp"
+                android:fontFamily="@font/poppins"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/item_makanan"
+                android:textAllCaps="false" />
+
+            <com.marozzi.segmentedtab.SegmentedTab
+                android:id="@+id/minuman"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:layout_weight="1"
+                android:text="@string/item_minuman"
+                android:textAllCaps="false" />
+        </com.marozzi.segmentedtab.SegmentedGroup>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actionTab">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginEnd="@dimen/dimen_10dp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_15dp"
+            android:background="@drawable/button_round_1"
+            android:elevation="@dimen/dimen_0dp"
+            app:backgroundTint="@color/red2"
+            app:elevation="@dimen/dimen_0dp"
+            app:itemIconTint="@color/bottom_nav_selector"
+            app:itemTextColor="@color/bottom_nav_selector"
+            app:labelVisibilityMode="unlabeled"
+            app:layout_anchor="@+id/rvTest"
+            app:layout_anchorGravity="bottom"
+            app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+            app:menu="@menu/gopek_menu" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
